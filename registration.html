@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <h1 class="headerBorder">Welcome to the Registration Page!</h1>
+    <form action="connect.php" method="post">
+      <div class="registrationPage">
+        <div>
+          <label for="firstName"><b>Firstname</b></label>
+          <input type="text" name="firstName" placeholder="i.e. Alex" />
+        </div>
+        <div>
+          <label for="lastName"><b>Lastname</b></label>
+          <input type="text" name="lastName" placeholder="i.e. Smith" />
+        </div>
+        <div>
+          <label for="dateOfBirth"><b>DOB</b></label>
+          <input
+            type="date"
+            name="dateOfBirth"
+            min="1900-01-31"
+            max="2100-12-31"
+          />
+        </div>
+        <div>
+          <label for="gender"><b>Gender</b></label>
+          <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="usrName"><b>Username</b></label>
+          <input type="text" name="username" placeholder="Enter Username" />
+        </div>
+        <div class="credsPass">
+          <label for="pss"><b>Password</b></label>
+          <input type="password" name="psword" placeholder="Enter Password" />
+        </div>
+
+        <button
+          class="registration"
+          type="submit"
+          style="text-decoration: none; font-family: Orbitron"
+        >
+          <div>Register</div>
+        </button>
+
+        <hr />
+
+        <div class="signIn">
+          Have an account? <a href="home.html">Click Here</a> to Sign In
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
